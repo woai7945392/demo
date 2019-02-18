@@ -3,12 +3,13 @@ server:
     context-path: /demo
   port: 9999
 spring:
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://10.9.5.36:3306/kasly
-    username: kasly
-    password: N15ZQab2Rb4DcXlo
-    driver-class-name: com.mysql.jdbc.Driver
+#  改为使用配置类配置数据源
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    url: jdbc:mysql://10.9.5.36:3306/kasly
+#    username: kasly
+#    password: N15ZQab2Rb4DcXlo
+#    driver-class-name: com.mysql.jdbc.Driver
 mybatis:
   mapper-locations: classpath*:mybatis/**/*Mapper.xml
   type-aliases-package: com.demo.entity
